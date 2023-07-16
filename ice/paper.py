@@ -9,8 +9,8 @@ from typing import Optional
 import nltk
 import requests
 from nltk.tokenize import sent_tokenize
-from pydantic import BaseModel
-from pydantic import Field
+from pydantic.v1 import BaseModel
+from pydantic.v1 import Field
 from structlog.stdlib import get_logger
 
 from ice.cache import diskcache

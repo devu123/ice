@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from structlog.stdlib import get_logger
 
 from ice.recipe import Recipe

@@ -5,7 +5,7 @@ from typing import Any
 from typing import Optional
 from typing import TYPE_CHECKING
 
-from pydantic_settings import BaseSettings
+from pydantic.v1_settings import BaseSettings
 from structlog import get_logger
 
 from .logging import log_lock
@@ -13,7 +13,7 @@ from .logging import log_lock
 if TYPE_CHECKING:
     AnyHttpUrl = str
 else:
-    from pydantic import AnyHttpUrl
+    from pydantic.v1 import AnyHttpUrl
 
 log = get_logger()
 
@@ -70,7 +70,7 @@ OUGHT_ICE_DIR = Path(environ.get("OUGHT_ICE_DIR", Path.home() / ".ought-ice"))
 
 _env_path = OUGHT_ICE_DIR / ".env"
 
-# Note that fields are loaded from pydantic in a particular priority ordering. See
+# Note that fields are loaded from pydantic.v1 in a particular priority ordering. See
 # https://docs.pydantic.dev/usage/settings/#field-value-priority
 settings = Settings(
     _env_file=_env_path if _env_path.exists() else None, _env_file_encoding="utf-8"

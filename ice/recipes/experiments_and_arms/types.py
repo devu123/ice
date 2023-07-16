@@ -9,10 +9,10 @@ from typing import runtime_checkable
 from typing import TypeVar
 from typing import Union
 
-from pydantic import BaseModel
-from pydantic import root_validator
-from pydantic import validator
-from pydantic.generics import GenericModel
+from pydantic.v1 import BaseModel
+from pydantic.v1 import root_validator
+from pydantic.v1 import validator
+from pydantic.v1.generics import GenericModel
 
 from ice.metrics.gold_standards import ParsedGoldStandardBase
 

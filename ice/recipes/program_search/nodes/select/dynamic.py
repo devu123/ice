@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from typing import Generic
 from typing import Optional
 
-from pydantic.generics import GenericModel
+from pydantic.v1.generics import GenericModel
 
 from ice.recipes.program_search.utils.find_examples import mark_gs
 from ice.recipes.program_search.utils.find_examples import rouge_distractor_scores

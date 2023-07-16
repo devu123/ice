@@ -2,7 +2,7 @@ from types import SimpleNamespace
 from typing import Any
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from structlog.stdlib import get_logger
 
 from ice.agent import Agent

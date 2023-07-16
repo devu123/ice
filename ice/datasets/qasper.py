@@ -4,8 +4,8 @@ from collections.abc import Sequence
 from itertools import islice
 from typing import Optional
 
-from pydantic import BaseModel
-from pydantic import validator
+from pydantic.v1 import BaseModel
+from pydantic.v1 import validator
 
 from ice.cache import diskcache
 from ice.paper import Paper

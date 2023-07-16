@@ -29,7 +29,7 @@ from typing import Union
 
 import rich
 import tqdm
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from rich.panel import Panel
 from thefuzz import fuzz
 

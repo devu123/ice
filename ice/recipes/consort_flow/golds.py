@@ -2,7 +2,7 @@ import itertools
 from collections.abc import Sequence
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from tqdm import tqdm
 
 from ice.metrics.gold_standards import get_gold_standard

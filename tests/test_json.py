@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from fvalues import F
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 from ice.json_value import to_json_value
 

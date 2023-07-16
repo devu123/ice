@@ -2,7 +2,7 @@ from typing import Any
 from typing import Literal
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from rich.pretty import pprint
 from structlog.stdlib import get_logger
 

@@ -3,7 +3,7 @@ from collections.abc import Sequence
 from statistics import mean
 from typing import Optional
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 from ice.evaluation.utils import rouge_compare
 from ice.metrics.gold_standards import get_gold_standard

@@ -2,7 +2,7 @@ from itertools import product
 from urllib.parse import urljoin
 
 import httpx
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 from ice.metrics.base import Metric
 from ice.metrics.base import Sample

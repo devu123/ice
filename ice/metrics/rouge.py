@@ -2,7 +2,7 @@ from collections.abc import Mapping
 from collections.abc import Sequence
 
 from anyio.to_thread import run_sync
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 from rouge_metric import PyRouge
 
 from ice.cache import diskcache

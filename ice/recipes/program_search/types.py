@@ -2,8 +2,8 @@ import typing as t
 from typing import Optional
 from typing import Union
 
-from pydantic import BaseModel
-from pydantic.generics import GenericModel
+from pydantic.v1 import BaseModel
+from pydantic.v1.generics import GenericModel
 
 from ice.paper import Paper
 
